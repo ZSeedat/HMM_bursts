@@ -93,7 +93,7 @@ for sub = 1:length(sub_IDs);
         corr_vals(sub,reg) = max(corr_tmp);
 
         % Classify bursts using thresholded gamma:
-        gamma_thresh = 0.5;
+        gamma_thresh = 2/3;
         burst_mask_gamma(reg,:) = Gamma_reg(:,burst_state)>gamma_thresh;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
